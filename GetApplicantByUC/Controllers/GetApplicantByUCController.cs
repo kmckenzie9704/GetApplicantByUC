@@ -21,10 +21,9 @@ namespace GetApplicantByUC.Controllers
 
         // GET api/GetApplicantByUC
         [HttpGet]
-        //public string Get([FromBody]Applicant applicant)
-        public string Get()
+        public string Get(string UC)
         {
-            string strUniqueCode = "Get an applicant by specifying a unique code.";
+            string strUniqueCode = GetApplicant(UC);
             return strUniqueCode;
         }
 
